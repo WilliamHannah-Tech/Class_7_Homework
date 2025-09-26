@@ -1,0 +1,38 @@
+Week 2 Lab Notes:
+
+Make a Security Group:
+
+Inbound:
+HTTP 80 Anywhere IPv4
+SSH  22 Anywhere IPv4
+
+Outbound:
+Leave it alone
+
+Tags:
+Optional
+
+
+Launch Instances:
+Name:
+App
+Instance type
+Key pair: create key pair
+Network: Select security group
+Configure storage: Leave it alone
+Advanced: User data > Put Script in there
+LAUNCH
+
+
+Create Instance Template:
+Name: 
+Version Description- We usually keep everything the same.
+Default value
+Key Pair: Should be selected already
+Start up Script: Should already be @ the bottom of the advanced in the user data.
+CREATE LAUNCH TEMPLATE
+
+Create Instance From Template
+Go to Instances
+Select which instance
+LAUNCH INSTANCE FROM TEMPLATE
